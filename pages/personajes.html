@@ -3,86 +3,317 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Bienvenido a la mejor página de Argentina para fanáticos de Game of Thrones"
+        />
         <link rel="shortcut icon" href="../assets/icons/favicon.jpg" />
         <title>Game of Thrones - Personajes</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <!-- Librería -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <!-- Mi css -->
+        <link rel="stylesheet" href="../css/styles.css" />
     </head>
     <body>
-        <!-- Logo header -->
         <header>
-            <a href="../index.html">
-                <img
-                    src="../assets/images/logo.png"
-                    alt="Logo"
-                    width="140"
-                    height="75"
-            /></a>
-            <!-- Navbar -->
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="personajes.html">Personajes</a></li>
-                    <li><a href="casas.html">Casas</a></li>
-                    <li><a href="galeria.html">Galería</a></li>
-                    <li><a href="merch.html">Merch</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+            <!-- Navbar + logo-->
+            <nav class="navbar navbar-expand-lg fixed-top estiloNav">
+                <div class="container-fluid px-md-5 containerNav">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/images/logo.png" alt="Logo" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html"
+                                    >Inicio</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="/pages/personajes.html"
+                                    >Personajes</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/galeria.html"
+                                    >Galería</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="merch.html">Merch</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/contacto.html"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
+        <!-- Contenido -->
         <main>
-            <!-- Contenido -->
-            <h1>Personajes Principales</h1>
-            <section>
-                <h3>Daenerys Targaryen</h3>
-                <img
-                    src="../assets/images/daenerys-targaryen.png"
-                    alt="Daenerys Targaryen"
-                />
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Iste deserunt tenetur sapiente itaque incidunt numquam
-                    consectetur modi repellendus, distinctio recusandae iure
-                    omnis aut tempora unde, enim sed quod in ipsa?
-                </p>
-            </section>
+            <div class="content">
+                <section class="characters-section">
+                    <h1 class="styleTitle" id="h1Personajes">
+                        Personajes Principales
+                    </h1>
+                    <div class="row">
+                        <article class="col-md-6 col-lg-4 character-card">
+                            <div class="card">
+                                <img
+                                    src="../assets/images/ned-stark.png"
+                                    class="card-img-top"
+                                    alt="Ned Stark"
+                                />
+                                <div class="card-body">
+                                    <h3 class="styleTitle">
+                                        Eddard "Ned" Stark
+                                    </h3>
+                                    <p class="card-text">
+                                        Patriarca de la Casa Stark y Señor de
+                                        Invernalia, Ned es un hombre honorable y
+                                        justo que valora el honor y la lealtad.
+                                        Después de la muerte de su amigo, el Rey
+                                        Robert Baratheon, se convierte en la
+                                        figura central de la lucha por el Trono
+                                        de Hierro.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 character-card">
+                            <div class="card">
+                                <img
+                                    src="../assets/images/sansa-stark.png"
+                                    class="card-img-top"
+                                    alt="Sansa Stark"
+                                />
+                                <div class="card-body">
+                                    <h3 class="styleTitle">Sansa Stark</h3>
+                                    <p class="card-text">
+                                        Hija mayor de Ned y Catelyn Stark, Sansa
+                                        comienza como una joven ingenua y
+                                        soñadora, pero a lo largo de la serie
+                                        desarrolla una astucia y resistencia
+                                        notables mientras lucha por sobrevivir
+                                        en un mundo lleno de peligros y
+                                        traiciones.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 character-card">
+                            <div class="card">
+                                <img
+                                    src="../assets/images/arya-stark.png"
+                                    class="card-img-top"
+                                    alt="Arya Stark"
+                                />
+                                <div class="card-body">
+                                    <h3 class="styleTitle">Arya Stark</h3>
+                                    <p class="card-text">
+                                        Hija menor de Ned y Catelyn Stark, Arya
+                                        rechaza los roles tradicionales de
+                                        género y se embarca en un viaje para
+                                        vengar a su familia y convertirse en una
+                                        asesina altamente entrenada. Es conocida
+                                        por su determinación y habilidades en el
+                                        combate.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 character-card">
+                            <div class="card">
+                                <img
+                                    src="../assets/images/jon-snow.png"
+                                    class="card-img-top"
+                                    alt="Jon Snow"
+                                />
+                                <div class="card-body">
+                                    <h3 class="styleTitle">Jon Snow</h3>
+                                    <p class="card-text">
+                                        Bastardo criado en la familia Stark, Jon
+                                        se une a la Guardia de la Noche para
+                                        proteger el reino de los peligros más
+                                        allá del Muro. Eventualmente, se
+                                        convierte en una figura clave en la
+                                        lucha contra el ejército de los muertos.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 character-card">
+                            <div class="card">
+                                <img
+                                    src="../assets/images/daenerys-targaryen.png"
+                                    class="card-img-top"
+                                    alt="Daenerys Targaryen"
+                                />
+                                <div class="card-body">
+                                    <h3 class="styleTitle">
+                                        Daenerys Targaryen
+                                    </h3>
+                                    <p class="card-text">
+                                        Última descendiente de la dinastía
+                                        Targaryen, Daenerys busca reclamar el
+                                        Trono de Hierro en nombre de su familia.
+                                        Con tres dragones y un gran ejército,
+                                        busca liberar a los esclavos y gobernar
+                                        con justicia.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 character-card">
+                            <div class="card">
+                                <img
+                                    src="../assets/images/tyrion-lannister.jpg"
+                                    class="card-img-top"
+                                    alt="Tyrion Lannister"
+                                />
+                                <div class="card-body">
+                                    <h3 class="styleTitle">Tyrion Lannister</h3>
+                                    <p class="card-text">
+                                        Conocido como "El Enano" y miembro de la
+                                        poderosa familia Lannister, Tyrion es
+                                        inteligente, ingenioso y un experto en
+                                        la política del reino. A menudo
+                                        subestimado debido a su estatura,
+                                        desempeña un papel crucial en varios
+                                        eventos importantes.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 character-card">
+                            <div class="card">
+                                <img
+                                    src="../assets/images/cersei-lannister.png"
+                                    class="card-img-top"
+                                    alt="Cersei Lannister"
+                                />
+                                <div class="card-body">
+                                    <h3 class="styleTitle">Cersei Lannister</h3>
+                                    <p class="card-text">
+                                        Reina regente y eventual reina de los
+                                        Siete Reinos, Cersei es astuta,
+                                        ambiciosa y despiadada en su búsqueda
+                                        del poder y la venganza. Su manipulación
+                                        y crueldad la convierten en una de las
+                                        antagonistas más memorables de la serie.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 character-card">
+                            <div class="card">
+                                <img
+                                    src="../assets/images/jaime-lannister.jpg"
+                                    class="card-img-top"
+                                    alt="Jaime Lannister"
+                                />
+                                <div class="card-body">
+                                    <h3 class="styleTitle">Jaime Lannister</h3>
+                                    <p class="card-text">
+                                        Conocido como "El Matarreyes", Jaime es
+                                        un hábil espadachín y miembro de la Casa
+                                        Lannister. A lo largo de la serie,
+                                        experimenta un desarrollo complejo,
+                                        cuestionando sus lealtades y luchando
+                                        por redimirse de su oscuro pasado.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 col-lg-4 character-card">
+                            <div class="card">
+                                <img
+                                    src="../assets/images/jorah-mormont.png"
+                                    class="card-img-top"
+                                    alt="Jorah Mormont"
+                                />
+                                <div class="card-body">
+                                    <h3 class="styleTitle">Jorah Mormont</h3>
+                                    <p class="card-text">
+                                        Sir Jorah Mormont es un noble exiliado
+                                        de Westeros que se convierte en un fiel
+                                        consejero de Daenerys Targaryen. A pesar
+                                        de su amor no correspondido por
+                                        Daenerys, Jorah lucha por redimirse y
+                                        demostrar su lealtad a lo largo de su
+                                        viaje.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
         </main>
-        <br /><br />
         <!-- Footer -->
-        <footer>
-            <a href="https://www.youtube.com/@gameofthrones" target="_blank"
-                ><img
-                    src="../assets/icons/youtube.png"
-                    alt="Youtube"
-                    width="30"
-                    height="30"
-            /></a>
-            <a
-                href="https://www.instagram.com/gameofthrones/?hl=es"
-                target="_blank"
-                ><img
-                    src="../assets/icons/insta.png"
-                    alt="Instagram"
-                    width="30"
-                    height="30"
-            /></a>
-            <a href="https://x.com/GameOfThrones" target="_blank"
-                ><img
-                    src="../assets/icons/twitter.png"
-                    alt="Twitter"
-                    width="30"
-                    height="30"
-            /></a>
-            <a href="https://www.facebook.com/GameOfThrones" target="_blank"
-                ><img
-                    src="../assets/icons/face.png"
-                    alt="Facebook"
-                    width="30"
-                    height="30"
-            /></a>
-            <br /><br />
-            <p>
-                Copyright ©2024 Game of Thrones Argentina. Todos los derechos
-                reservados.
-            </p>
+        <footer class="estiloFooter">
+            <div class="container-fluid px-md-5 containerFooter">
+                <p>Redes Sociales</p>
+                <div class="d-flex justify-content-center socialIcons">
+                    <a
+                        href="https://www.youtube.com/@gameofthrones"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/gameofthrones/?hl=es"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/GameOfThrones" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a
+                        href="https://www.facebook.com/GameOfThrones"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <p>
+                    Copyright ©2024 Game of Thrones Argentina. Todos los
+                    derechos reservados.
+                </p>
+            </div>
         </footer>
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

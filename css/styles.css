@@ -1,3 +1,4 @@
+/* Fuentes */
 @font-face {
     font-family: "Merriweather Sans";
     src: url(../assets/fonts/MerriweatherSans-Light.ttf);
@@ -29,6 +30,7 @@ body {
     height: 100%;
 }
 
+/* Header */
 .containerNav {
     margin-inline: 4%;
 }
@@ -72,6 +74,7 @@ body {
     border: 1px solid #829e98;
 }
 
+/* Index y estilos generales*/
 .containerTitle {
     display: flex;
     justify-content: center;
@@ -153,6 +156,50 @@ body {
     margin-inline: 7%;
 }
 
+/* Sección Personajes */
+#h1Personajes {
+    font-size: 1.8rem;
+    margin-top: 13vh;
+    margin-bottom: 4vh;
+}
+
+.card-body h3 {
+    color: #2d2e2e;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.character-card {
+    padding: 1rem;
+}
+
+.character-card .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+.character-card .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.character-card img {
+    transition: opacity 0.5s ease;
+}
+
+.character-card img:hover {
+    opacity: 0.7;
+}
+
+.card-text {
+    line-height: 1.3;
+    letter-spacing: 0px;
+    font-size: 1.1rem;
+}
+
+/* Sección Merch */
 #merchTitle {
     font-size: 1.8rem;
     margin-top: 13vh;
@@ -252,6 +299,7 @@ body {
     box-shadow: 2px 2px 10px #0f0f0f;
 }
 
+/* Footer */
 .estiloFooter {
     font-family: "Merriweather Sans", sans-serif;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
