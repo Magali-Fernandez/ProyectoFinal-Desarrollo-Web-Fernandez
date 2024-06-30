@@ -381,6 +381,39 @@ body {
     box-shadow: 2px 2px 10px #0f0f0f;
 }
 
+/* Sección Contacto */
+#contactTitle {
+    font-size: 1.8rem;
+    margin-top: 13vh;
+    margin-bottom: 4vh;
+}
+
+.formContainer .row {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e6a61c;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-inline: 5%;
+}
+
+.contact-image,
+.contact-form-container {
+    display: flex;
+    align-items: center;
+}
+
+.cuervo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 /* Footer */
 .estiloFooter {
     font-family: "Merriweather Sans", sans-serif;
