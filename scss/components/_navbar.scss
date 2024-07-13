@@ -1,11 +1,10 @@
+.containerNav {
+    margin-inline: 4%;
+}
+
 .estiloNav {
     font-family: $font-family-merriweather;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../assets/images/oscuro1.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+    @include background;
     letter-spacing: 2px;
     z-index: 1000;
 }
@@ -25,7 +24,7 @@
 }
 
 .estiloNav .nav-link {
-    color: #f5f5f5;
+    color: $color-primary;
     transition: color 0.3s ease-in-out;
 
     &:hover {

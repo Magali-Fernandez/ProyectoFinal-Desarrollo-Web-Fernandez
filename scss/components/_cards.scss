@@ -17,9 +17,7 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         font-weight: bold;
-        display: flex;
-        text-align: center;
-        justify-content: center;
+        @include flex-row-center;
     }
 }
 
@@ -29,7 +27,7 @@
     .card {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         border: none;
-        background-color: #f5f5f5;
+        background-color: $color-primary;
 
         &:hover {
             transform: translateY(-10px);

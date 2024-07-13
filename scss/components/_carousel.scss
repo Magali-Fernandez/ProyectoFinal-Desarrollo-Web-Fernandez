@@ -4,11 +4,11 @@
 
 .carousel-indicators {
     button {
-        color: #f5f5f5;
+        color: $color-primary;
     }
 
     .active {
-        background-color: #e6a61c;
+        background-color: $color-secondary;
     }
 }
 
@@ -18,7 +18,7 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.452);
-    color: #f5f5f5;
+    color: $color-primary;
     padding: 10px;
     border-radius: 5px;
 }

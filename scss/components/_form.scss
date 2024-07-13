@@ -1,11 +1,11 @@
 .formContainer .row {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #e6a61c;
-    align-items: center;
+    color: $color-secondary;
+    margin-inline: 5%;
     display: flex;
     justify-content: center;
-    margin-inline: 5%;
+    align-items: center;
 }
 
 .contact-image,

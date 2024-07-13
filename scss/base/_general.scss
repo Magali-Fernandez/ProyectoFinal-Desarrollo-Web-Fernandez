@@ -1,8 +1,8 @@
 .styleTitle {
-    font-family: "Cinzel", sans-serif;
+    font-family: $font-family-cinzel;
     font-size: 1.8rem;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
-    color: #e6a61c;
+    color: $color-secondary;
     margin-top: 20px;
     margin-bottom: 20px;
 }
