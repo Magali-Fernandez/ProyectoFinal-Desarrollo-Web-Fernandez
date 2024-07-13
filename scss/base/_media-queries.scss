@@ -1,0 +1,244 @@
+@media (max-width: 1200px) {
+    .imageTitle {
+        max-width: 1000px;
+    }
+
+    .content {
+        padding: 20px 30px;
+    }
+
+    #carrito {
+        width: 70px;
+        height: auto;
+    }
+
+    .estiloFooter p {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .carousel-item {
+        img {
+            height: 500px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .carousel-caption {
+        bottom: 15px;
+        padding: 8px;
+    }
+
+    #carrito {
+        width: 70px;
+        height: auto;
+    }
+
+    .imgContainer {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .estiloFooter p {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 20px 15px;
+    }
+
+    .styleTitle,
+    #h1Home {
+        font-size: 1.75rem;
+    }
+
+    .carousel-item {
+        img {
+            height: 500px;
+        }
+    }
+
+    .carousel-caption {
+        width: 80%;
+        padding: 8px;
+        font-size: 0.9rem;
+
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+    #carrito {
+        width: 60px;
+        height: auto;
+    }
+
+    .merch h4 {
+        font-size: 1rem;
+    }
+
+    #merchTitle,
+    #h1Personajes {
+        font-size: 1.75rem;
+    }
+
+    .imgContainer {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .estiloFooter p {
+        font-size: 0.6rem;
+    }
+
+    .socialIcons a {
+        font-size: 17px;
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-link {
+        font-size: 0.875rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .containerTitle {
+        padding: 70px 10px 10px 10px;
+    }
+
+    .carousel-item {
+        img {
+            height: 500px;
+        }
+    }
+
+    .carousel-caption {
+        width: 80%;
+        padding: 8px;
+        font-size: 0.9rem;
+
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .socialIcons a {
+        font-size: 17px;
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .content {
+        padding: 20px 10px;
+    }
+
+    .styleTitle,
+    #h1Home,
+    #merchTitle,
+    #h1Personajes {
+        font-size: 1.5rem;
+    }
+
+    .character-card {
+        padding: 0.8rem;
+
+        .card {
+            transform: scale(0.85);
+        }
+
+        img {
+            opacity: 1;
+        }
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+
+    .carousel-item {
+        img {
+            height: 400px;
+        }
+    }
+
+    .carousel-caption {
+        width: 85%;
+        padding: 6px;
+        font-size: 0.85rem;
+
+        h3 {
+            font-size: 1.1rem;
+        }
+    }
+
+    .merch h4 {
+        font-size: 1rem;
+    }
+
+    #carrito {
+        width: 60px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 20px 5px;
+    }
+
+    .styleTitle,
+    #h1Home {
+        font-size: 1.25rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+    .character-card {
+        padding: 0.5rem;
+
+        .card {
+            transform: scale(0.8);
+        }
+
+        img {
+            opacity: 1;
+        }
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .carousel-item {
+        img {
+            height: 300px;
+        }
+    }
+
+    .carousel-caption {
+        width: 90%;
+        padding: 5px;
+        font-size: 0.8rem;
+
+        h3 {
+            font-size: 1rem;
+        }
+    }
+
+    #merchTitle,
+    #h1Personajes {
+        font-size: 1.25rem;
+    }
+
+    #carrito {
+        width: 70px;
+        height: auto;
+    }
+}

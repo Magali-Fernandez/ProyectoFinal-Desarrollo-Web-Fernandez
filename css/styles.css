@@ -1,3 +1,643 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+@font-face {
+  font-family: "Merriweather Sans";
+  src: url(../assets/fonts/MerriweatherSans-Light.ttf);
+}
+@font-face {
+  font-family: "Alegreya Sans SC";
+  src: url(../assets/fonts/AlegreyaSansSC-Light.ttf);
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url(../assets/fonts/Cinzel-SemiBold.ttf);
+}
+.styleTitle {
+  font-family: "Cinzel", sans-serif;
+  font-size: 1.8rem;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  color: #e6a61c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  padding-inline: 14%;
+}
+.content p {
+  margin: 0;
+  margin-inline: 7%;
+}
+.content li {
+  margin-inline: 7%;
+}
+.content li p {
+  margin-inline: 0px;
+  margin-bottom: 0;
+}
+
+body {
+  font-family: "Alegreya Sans SC", sans-serif;
+  background-image: url(/assets/images/oscuro.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 1.15rem;
+  color: #f5f5f5;
+  text-align: left;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  height: 100%;
+}
+
+.containerNav {
+  margin-inline: 4%;
+}
+
+.estiloNav {
+  font-family: "Merriweather Sans", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/oscuro1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+.navbar-brand img {
+  height: 60px;
+}
+
+.nav-item {
+  font-size: 1.2rem;
+  margin-inline: 5px;
+}
+
+.estiloNav .nav-link {
+  color: #f5f5f5;
+  transition: color 0.3s ease-in-out;
+}
+.estiloNav .nav-link:hover {
+  color: #ac2323;
+}
+
+.navbar-toggler {
+  border: 1px solid #829e98;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card-body h3 {
+  background: linear-gradient(135deg, #141313, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.character-card {
+  padding: 1.5rem;
+}
+.character-card .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  background-color: #f5f5f5;
+}
+.character-card .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.character-card img {
+  transition: opacity 0.5s ease;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.character-card img:hover {
+  opacity: 0.7;
+}
+
+.card-text {
+  color: #0f0f0f;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  font-size: 1.1rem;
+}
+
+.styleContainer {
+  margin-bottom: 48px;
+}
+
+.carousel-indicators button {
+  color: #f5f5f5;
+}
+.carousel-indicators .active {
+  background-color: #e6a61c;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.452);
+  color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.bodaRoja {
+  background-color: rgba(0, 0, 0, 0.726);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.carousel-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.spotifyIframe {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1200px;
+  height: 550px;
+}
+
+#styleSpotify {
+  margin-top: 45px;
+}
+
+.formContainer .row {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e6a61c;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-inline: 5%;
+}
+
+.contact-image,
+.contact-form-container {
+  display: flex;
+  align-items: center;
+}
+
+.cuervo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.containerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px 20px 20px 20px;
+}
+
+.imageTitle {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  padding: 20px;
+}
+
+.homeContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.imageHome {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.homeContainer:hover .imageHome {
+  opacity: 0;
+}
+.homeContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/gameofthrones.gif");
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+.homeContainer:hover::before {
+  opacity: 1;
+}
+
+#h1Home {
+  margin-top: 3%;
+  font-size: 1.8rem;
+}
+
+.sinNegrita {
+  font-weight: normal;
+}
+
+.regionsList {
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 0;
+}
+.regionsList strong {
+  font-family: "Cinzel", sans serif;
+  font-size: 1.1rem;
+}
+.regionsList li {
+  border: 1px solid #534b4b;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgb(20, 20, 20);
+  border: #534b4b;
+  margin: 15px 0;
+  margin-inline: 7%;
+}
+
+#h1Personajes {
+  font-size: 1.8rem;
+  margin-top: 13vh;
+  margin-bottom: 4vh;
+}
+
+#h1Galeria {
+  font-size: 1.8rem;
+  margin-top: 13vh;
+  margin-bottom: 4vh;
+}
+
+#merchTitle {
+  font-size: 1.8rem;
+  margin-top: 13vh;
+  margin-bottom: 4vh;
+}
+
+#carrito {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  border: 3px solid #1068cc;
+  border-radius: 25%;
+  width: 5%;
+  height: auto;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+#carrito:active {
+  border: 3px solid #06478d;
+  box-shadow: 3px 3px 5px #0f0f0f;
+}
+#carrito:hover {
+  transform: scale(1.1);
+}
+
+.imgContainer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 20px;
+  padding-inline: 5%;
+  margin: 3%;
+}
+
+.merch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.merch img {
+  width: 80%;
+  height: auto;
+  outline: 5px solid wheat;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+.merch img:hover {
+  opacity: 0.5;
+}
+.merch h4 {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+.merch button {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  color: #f5f5f5;
+  background-color: #1068cc;
+  font-family: "Merriweather Sans", sans-serif;
+  cursor: pointer;
+  width: 65%;
+  transition: background-color 0.3s;
+  box-shadow: 1px 1px 4px #0f0f0f;
+}
+.merch button:hover {
+  background-color: #06478d;
+  color: #f5f5f5;
+}
+.merch button:active {
+  background-color: #07284d;
+  color: #0f0f0f;
+  box-shadow: 2px 2px 10px #0f0f0f;
+}
+
+#contactTitle {
+  font-size: 1.8rem;
+  margin-top: 13vh;
+  margin-bottom: 4vh;
+}
+
+.estiloFooter {
+  font-family: "Merriweather Sans", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/oscuro1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  background-color: #0f0f0f;
+  box-shadow: 0 -8px 8px rgba(0, 0, 0, 0.3);
+  color: #f5f5f5;
+  margin-top: 10%;
+}
+.estiloFooter p {
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.containerFooter {
+  padding: 1rem;
+}
+.containerFooter p {
+  text-align: center;
+}
+
+.socialIcons a {
+  color: #f5f5f5;
+  margin: 0 20px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.socialIcons a:hover {
+  color: #ac2323;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 1200px) {
+  .imageTitle {
+    max-width: 1000px;
+  }
+  .content {
+    padding: 20px 30px;
+  }
+  #carrito {
+    width: 70px;
+    height: auto;
+  }
+  .estiloFooter p {
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 1024px) {
+  .carousel-item img {
+    height: 500px;
+  }
+  .carousel-item h3 {
+    font-size: 1.2rem;
+  }
+  .carousel-caption {
+    bottom: 15px;
+    padding: 8px;
+  }
+  #carrito {
+    width: 70px;
+    height: auto;
+  }
+  .imgContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .estiloFooter p {
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    padding: 20px 15px;
+  }
+  .styleTitle,
+  #h1Home {
+    font-size: 1.75rem;
+  }
+  .carousel-item img {
+    height: 500px;
+  }
+  .carousel-caption {
+    width: 80%;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+  #carrito {
+    width: 60px;
+    height: auto;
+  }
+  .merch h4 {
+    font-size: 1rem;
+  }
+  #merchTitle,
+  #h1Personajes {
+    font-size: 1.75rem;
+  }
+  .imgContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .estiloFooter p {
+    font-size: 0.6rem;
+  }
+  .socialIcons a {
+    font-size: 17px;
+    margin: 0 15px;
+  }
+}
+@media (max-width: 600px) {
+  .nav-link {
+    font-size: 0.875rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .containerTitle {
+    padding: 70px 10px 10px 10px;
+  }
+  .carousel-item img {
+    height: 500px;
+  }
+  .carousel-caption {
+    width: 80%;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+  .socialIcons a {
+    font-size: 17px;
+    margin: 0 15px;
+  }
+}
+@media (max-width: 576px) {
+  .content {
+    padding: 20px 10px;
+  }
+  .styleTitle,
+  #h1Home,
+  #merchTitle,
+  #h1Personajes {
+    font-size: 1.5rem;
+  }
+  .character-card {
+    padding: 0.8rem;
+  }
+  .character-card .card {
+    transform: scale(0.85);
+  }
+  .character-card img {
+    opacity: 1;
+  }
+  .card-text {
+    font-size: 0.95rem;
+  }
+  .carousel-item img {
+    height: 400px;
+  }
+  .carousel-caption {
+    width: 85%;
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1.1rem;
+  }
+  .merch h4 {
+    font-size: 1rem;
+  }
+  #carrito {
+    width: 60px;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .content {
+    padding: 20px 5px;
+  }
+  .styleTitle,
+  #h1Home {
+    font-size: 1.25rem;
+  }
+  .content p {
+    font-size: 1rem;
+  }
+  .character-card {
+    padding: 0.5rem;
+  }
+  .character-card .card {
+    transform: scale(0.8);
+  }
+  .character-card img {
+    opacity: 1;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+  .carousel-item img {
+    height: 300px;
+  }
+  .carousel-caption {
+    width: 90%;
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+  .carousel-caption h3 {
+    font-size: 1rem;
+  }
+  #merchTitle,
+  #h1Personajes {
+    font-size: 1.25rem;
+  }
+  #carrito {
+    width: 70px;
+    height: auto;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
