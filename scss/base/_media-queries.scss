@@ -7,13 +7,22 @@
         padding: 20px 30px;
     }
 
+    .youtube {
+        margin-bottom: 30px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #carrito {
         width: 70px;
         height: auto;
     }
 
-    .estiloFooter p {
-        font-size: 0.65rem;
+    .estiloFooter {
+        p {
+            font-size: 0.65rem;
+        }
     }
 }
 
@@ -33,6 +42,13 @@
         padding: 8px;
     }
 
+    .youtube {
+        margin-bottom: 30px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #carrito {
         width: 70px;
         height: auto;
@@ -42,8 +58,17 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    .estiloFooter p {
-        font-size: 0.65rem;
+    .btnForm {
+        font-size: 0.8rem;
+        border: none;
+        border-radius: 5px;
+        width: 20%;
+    }
+
+    .estiloFooter {
+        p {
+            font-size: 0.65rem;
+        }
     }
 }
 
@@ -73,17 +98,28 @@
         }
     }
 
+    .youtube {
+        margin-bottom: 30px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #carrito {
         width: 60px;
         height: auto;
     }
 
-    .merch h4 {
-        font-size: 1rem;
+    .merch {
+        h4 {
+            font-size: 1rem;
+        }
     }
 
     #merchTitle,
-    #h1Personajes {
+    #h1Personajes,
+    #h1Galeria,
+    #contactTitle {
         font-size: 1.75rem;
     }
 
@@ -91,13 +127,17 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    .estiloFooter p {
-        font-size: 0.6rem;
+    .estiloFooter {
+        p {
+            font-size: 0.6rem;
+        }
     }
 
-    .socialIcons a {
-        font-size: 17px;
-        margin: 0 15px;
+    .socialIcons {
+        a {
+            font-size: 17px;
+            margin: 0 15px;
+        }
     }
 }
 
@@ -109,6 +149,13 @@
 
     .containerTitle {
         padding: 70px 10px 10px 10px;
+    }
+
+    .youtube {
+        margin-bottom: 30px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .carousel-item {
@@ -127,9 +174,11 @@
         }
     }
 
-    .socialIcons a {
-        font-size: 17px;
-        margin: 0 15px;
+    .socialIcons {
+        a {
+            font-size: 17px;
+            margin: 0 15px;
+        }
     }
 }
 
@@ -141,24 +190,39 @@
     .styleTitle,
     #h1Home,
     #merchTitle,
-    #h1Personajes {
+    #h1Personajes,
+    #h1Galeria,
+    #contactTitle {
         font-size: 1.5rem;
     }
 
     .character-card {
-        padding: 0.8rem;
+        padding: 0.75rem;
 
         .card {
-            transform: scale(0.85);
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+            box-shadow: none;
         }
 
         img {
-            opacity: 1;
+            width: 100%;
+            height: auto;
         }
-    }
 
-    .card-text {
-        font-size: 0.95rem;
+        .card-body {
+            padding: 5px;
+            margin-bottom: 5px;
+
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+        }
     }
 
     .carousel-item {
@@ -177,8 +241,14 @@
         }
     }
 
-    .merch h4 {
-        font-size: 1rem;
+    .youtube {
+        width: 95%;
+    }
+
+    .merch {
+        h4 {
+            font-size: 1rem;
+        }
     }
 
     #carrito {
@@ -197,23 +267,39 @@
         font-size: 1.25rem;
     }
 
-    .content p {
-        font-size: 1rem;
+    .content {
+        p {
+            font-size: 1rem;
+        }
     }
+
     .character-card {
-        padding: 0.5rem;
+        padding: 0.75rem;
 
         .card {
-            transform: scale(0.8);
+            width: 92%;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: none;
         }
 
         img {
-            opacity: 1;
+            width: 100%;
+            height: auto;
         }
-    }
 
-    .card-text {
-        font-size: 0.9rem;
+        .card-body {
+            padding: 5px;
+            margin-bottom: 5px;
+
+            h3 {
+                font-size: 1.2rem;
+            }
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+        }
     }
 
     .carousel-item {
@@ -232,13 +318,29 @@
         }
     }
 
+    .youtube {
+        width: 95%;
+    }
+
     #merchTitle,
-    #h1Personajes {
+    #h1Personajes,
+    #h1Galeria,
+    #contactTitle {
         font-size: 1.25rem;
     }
 
     #carrito {
         width: 70px;
         height: auto;
+    }
+
+    .row {
+        label {
+            font-size: 1rem;
+        }
+    }
+
+    .btnForm {
+        font-size: 0.8rem;
     }
 }

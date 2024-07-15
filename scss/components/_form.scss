@@ -8,10 +8,36 @@
     align-items: center;
 }
 
+.row {
+    label {
+        font-family: $font-family-cinzel;
+        font-size: 1.2rem;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+}
+
 .contact-image,
 .contact-form-container {
     display: flex;
     align-items: center;
+}
+
+.btnForm {
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    color: $color-primary;
+    background-color: $color-accent;
+    font-family: $font-family-merriweather;
+    cursor: pointer;
+    width: 20%;
+    transition: background-color 0.3s;
+    box-shadow: 1px 1px 4px #0f0f0f;
+
+    &:hover {
+        background-color: $color-accent-dark;
+        color: $color-primary;
+    }
 }
 
 .cuervo {
@@ -22,4 +48,5 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    margin-bottom: 10px;
 }

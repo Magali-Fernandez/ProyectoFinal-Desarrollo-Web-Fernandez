@@ -25,14 +25,16 @@
     }
 }
 
-.socialIcons a {
-    color: $color-primary;
-    margin: 0 20px;
-    font-size: 20px;
-    text-decoration: none;
+.socialIcons {
+    a {
+        color: $color-primary;
+        margin: 0 20px;
+        font-size: 20px;
+        text-decoration: none;
 
-    &:hover {
-        color: #ac2323;
-        transition: color 0.3s ease;
+        &:hover {
+            color: #ac2323;
+            transition: color 0.3s ease;
+        }
     }
 }

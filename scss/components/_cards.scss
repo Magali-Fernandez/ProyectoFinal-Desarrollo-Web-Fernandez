@@ -46,8 +46,12 @@
     object-fit: cover;
 }
 
-.character-card img:hover {
-    opacity: 0.7;
+.character-card {
+    img {
+        &:hover {
+            opacity: 0.7;
+        }
+    }
 }
 
 .card-text {

@@ -2,6 +2,10 @@
     margin-bottom: 48px;
 }
 
+#myCarousel {
+    box-shadow: 2px 2px 8px rgb(20, 20, 20);
+}
+
 .carousel-indicators {
     button {
         color: $color-primary;
