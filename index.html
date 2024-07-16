@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Bienvenido a la mejor página de Argentina para fanáticos de Game of Thrones"
+            content="Bienvenido a la mejor página de Argentina para fanáticos de Game of Thrones, aquí encontrarás mucho contenido sobre tu serie favorita"
         />
         <meta
             name="keywords"
-            content="game of thrones, got, westeros, lannister, targaryen, stark"
+            content="game of thrones, got, westeros, casas, lannister, targaryen, stark, arryn, baratheon, greyjoy, introducción, trama, norte, essos, trono"
         />
         <meta name="author" content="Magalí Fernández" />
         <link rel="shortcut icon" href="assets/icons/favicon.jpg" />
@@ -36,7 +36,10 @@
             <nav class="navbar navbar-expand-lg fixed-top estiloNav">
                 <div class="container-fluid px-md-5 containerNav">
                     <a class="navbar-brand" href="index.html">
-                        <img src="./assets/images/logo.webp" alt="Logo" />
+                        <img
+                            src="./assets/images/logo.webp"
+                            alt="Logo del sitio"
+                        />
                     </a>
                     <button
                         class="navbar-toggler"
@@ -96,11 +99,11 @@
                 <img
                     class="imageHome"
                     src="./assets/images/game-of-thrones-1-1920x1080.webp"
-                    alt="Game Of Thrones"
+                    alt="Ned Stark en el trono de hierro"
                     title="Ned Stark"
                 />
             </div>
-            <div class="content">
+            <div role="contentinfo" class="content">
                 <section>
                     <h1 class="styleTitle" id="h1Home">Introducción</h1>
                     <p>
@@ -250,6 +253,10 @@
                     </ul>
                 </section>
             </div>
+            <!-- Enlace "volver arriba" -->
+            <div class="text-center my-4">
+                <a href="#" class="btn btn-primary volver">Volver arriba</a>
+            </div>
         </main>
         <!-- Footer -->
         <footer class="estiloFooter">
@@ -259,21 +266,28 @@
                     <a
                         href="https://www.youtube.com/@gameofthrones"
                         target="_blank"
+                        aria-label="Ir a youtube oficial de Game of Thrones, se abre en una nueva pestaña"
                     >
                         <i class="fa-brands fa-youtube"></i>
                     </a>
                     <a
                         href="https://www.instagram.com/gameofthrones/?hl=es"
                         target="_blank"
+                        aria-label="Ir a instagram oficial de Game of Thrones, se abre en una nueva pestaña"
                     >
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://x.com/GameOfThrones" target="_blank">
+                    <a
+                        href="https://x.com/GameOfThrones"
+                        target="_blank"
+                        aria-label="Ir a twitter oficial de Game of Thrones, se abre en una nueva pestaña"
+                    >
                         <i class="fa-brands fa-twitter"></i>
                     </a>
                     <a
                         href="https://www.facebook.com/GameOfThrones"
                         target="_blank"
+                        aria-label="Ir a facebook oficial de Game of Thrones, se abre en una nueva pestaña"
                     >
                         <i class="fa-brands fa-facebook"></i>
                     </a>

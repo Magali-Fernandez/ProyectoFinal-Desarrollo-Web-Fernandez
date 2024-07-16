@@ -83,3 +83,34 @@
         margin-inline: 7%;
     }
 }
+
+.text-center,
+.my-4 {
+    padding-top: 2em;
+}
+
+.btn,
+.btn-primary,
+.volver {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: $color-primary;
+    background-color: $color-accent;
+    font-family: $font-family-merriweather;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 1px 1px 4px #0f0f0f;
+
+    &:hover {
+        background-color: $color-accent-dark;
+        color: $color-primary;
+    }
+
+    &:active {
+        background-color: #07284d;
+        color: #0f0f0f;
+        box-shadow: 2px 2px 10px #0f0f0f;
+    }
+}

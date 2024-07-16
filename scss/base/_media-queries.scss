@@ -32,7 +32,7 @@
             height: 500px;
         }
 
-        h3 {
+        p {
             font-size: 1.2rem;
         }
     }
@@ -62,7 +62,7 @@
         font-size: 0.8rem;
         border: none;
         border-radius: 5px;
-        width: 20%;
+        width: 25%;
     }
 
     .estiloFooter {
@@ -75,6 +75,13 @@
 @media (max-width: 768px) {
     .content {
         padding: 20px 15px;
+    }
+
+    .btn,
+    .btn-primary,
+    .volver {
+        font-size: 0.8rem;
+        padding: 8px 16px;
     }
 
     .styleTitle,
@@ -93,7 +100,7 @@
         padding: 8px;
         font-size: 0.9rem;
 
-        h3 {
+        p {
             font-size: 1.2rem;
         }
     }
@@ -111,7 +118,7 @@
     }
 
     .merch {
-        h4 {
+        h2 {
             font-size: 1rem;
         }
     }
@@ -169,7 +176,7 @@
         padding: 8px;
         font-size: 0.9rem;
 
-        h3 {
+        p {
             font-size: 1.2rem;
         }
     }
@@ -180,11 +187,24 @@
             margin: 0 15px;
         }
     }
+
+    .estiloFooter {
+        p {
+            font-size: 0.8rem;
+        }
+    }
 }
 
 @media (max-width: 576px) {
     .content {
         padding: 20px 10px;
+    }
+
+    .btn,
+    .btn-primary,
+    .volver {
+        font-size: 0.8rem;
+        padding: 8px 16px;
     }
 
     .styleTitle,
@@ -215,7 +235,7 @@
             padding: 5px;
             margin-bottom: 5px;
 
-            h3 {
+            h2 {
                 font-size: 1.2rem;
             }
         }
@@ -236,7 +256,7 @@
         padding: 6px;
         font-size: 0.85rem;
 
-        h3 {
+        p {
             font-size: 1.1rem;
         }
     }
@@ -246,7 +266,7 @@
     }
 
     .merch {
-        h4 {
+        h2 {
             font-size: 1rem;
         }
     }
@@ -254,6 +274,12 @@
     #carrito {
         width: 60px;
         height: auto;
+    }
+
+    .estiloFooter {
+        p {
+            font-size: 0.75rem;
+        }
     }
 }
 
@@ -271,6 +297,13 @@
         p {
             font-size: 1rem;
         }
+    }
+
+    .btn,
+    .btn-primary,
+    .volver {
+        font-size: 0.8rem;
+        padding: 8px 16px;
     }
 
     .character-card {
@@ -292,7 +325,7 @@
             padding: 5px;
             margin-bottom: 5px;
 
-            h3 {
+            h2 {
                 font-size: 1.2rem;
             }
         }
@@ -313,13 +346,17 @@
         padding: 5px;
         font-size: 0.8rem;
 
-        h3 {
+        p {
             font-size: 1rem;
         }
     }
 
     .youtube {
         width: 95%;
+    }
+
+    #styleSpotify {
+        margin-bottom: 20px;
     }
 
     #merchTitle,
@@ -342,5 +379,11 @@
 
     .btnForm {
         font-size: 0.8rem;
+    }
+
+    .estiloFooter {
+        p {
+            font-size: 0.75rem;
+        }
     }
 }

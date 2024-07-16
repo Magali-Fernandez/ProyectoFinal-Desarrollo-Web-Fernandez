@@ -15,6 +15,7 @@
 
     img {
         height: 60px;
+        width: auto;
     }
 }
 
@@ -23,7 +24,8 @@
     margin-inline: 5px;
 }
 
-.estiloNav .nav-link {
+.estiloNav,
+.nav-link {
     color: $color-primary;
     transition: color 0.3s ease-in-out;
 
