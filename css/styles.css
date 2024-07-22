@@ -43,9 +43,42 @@
   margin-bottom: 0;
 }
 
+.text-center,
+.my-4 {
+  padding-top: 2em;
+}
+
+.btn,
+.btn-primary,
+.volver {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #f5f5f5;
+  background-color: #1068cc;
+  font-family: "Merriweather Sans", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 1px 1px 4px #0f0f0f;
+}
+.btn:hover,
+.btn-primary:hover,
+.volver:hover {
+  background-color: #06478d;
+  color: #f5f5f5;
+}
+.btn:active,
+.btn-primary:active,
+.volver:active {
+  background-color: #07284d;
+  color: #0f0f0f;
+  box-shadow: 2px 2px 10px #0f0f0f;
+}
+
 body {
   font-family: "Alegreya Sans SC", sans-serif;
-  background-image: url(../assets/images/oscuro.webp);
+  background-image: url(../assets/images/black.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -390,39 +423,6 @@ body {
   border: #534b4b;
   margin: 15px 0;
   margin-inline: 7%;
-}
-
-.text-center,
-.my-4 {
-  padding-top: 2em;
-}
-
-.btn,
-.btn-primary,
-.volver {
-  font-size: 0.9rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  color: #f5f5f5;
-  background-color: #1068cc;
-  font-family: "Merriweather Sans", sans-serif;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  box-shadow: 1px 1px 4px #0f0f0f;
-}
-.btn:hover,
-.btn-primary:hover,
-.volver:hover {
-  background-color: #06478d;
-  color: #f5f5f5;
-}
-.btn:active,
-.btn-primary:active,
-.volver:active {
-  background-color: #07284d;
-  color: #0f0f0f;
-  box-shadow: 2px 2px 10px #0f0f0f;
 }
 
 #h1Personajes {
