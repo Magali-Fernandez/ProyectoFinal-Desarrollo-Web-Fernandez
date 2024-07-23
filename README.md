@@ -4,4 +4,4 @@ Mi proyecto trata de un sitio web con temática de Game of Thrones, cuenta con i
 Tenía muchas ideas en mente pero elegí este tema porque es algo que me gusta mucho.
 
 Contacto: Magaí Fernández - magali.f03@gmail.com
-Github pages: https://magali-fernandez.github.io/PreEntrega3-Fernandez/
+Github pages: https://magali-fernandez.github.io/ProyectoFinal-Fernandez/
