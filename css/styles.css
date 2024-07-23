@@ -559,15 +559,16 @@ body {
   text-align: center;
 }
 
-.socialIcons a {
+.icon-style, .socialIcons a {
   color: #f5f5f5;
   margin: 0 20px;
   font-size: 20px;
   text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
-.socialIcons a:hover {
+.icon-style:hover, .socialIcons a:hover {
   color: #ac2323;
-  transition: color 0.3s ease;
+  transform: scale(1.6);
 }
 
 @media (max-width: 1200px) {
@@ -623,6 +624,12 @@ body {
   }
   .estiloFooter p {
     font-size: 0.65rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .character-card:last-child {
+    align-self: center;
+    margin: 0 auto;
   }
 }
 @media (max-width: 768px) {

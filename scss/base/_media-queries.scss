@@ -73,6 +73,14 @@
     }
 }
 
+// Media query específica para personajes
+@media (min-width: 768px) and (max-width: 991px) {
+    .character-card:last-child {
+        align-self: center;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 768px) {
     .content {
         padding: 20px 15px;

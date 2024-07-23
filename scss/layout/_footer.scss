@@ -26,16 +26,22 @@
     }
 }
 
+// Estilos para íconos
+.icon-style {
+    color: $color-primary;
+    margin: 0 20px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        color: #ac2323;
+        transform: scale(1.6);
+    }
+}
+
 .socialIcons {
     a {
-        color: $color-primary;
-        margin: 0 20px;
-        font-size: 20px;
-        text-decoration: none;
-
-        &:hover {
-            color: #ac2323;
-            transition: color 0.3s ease;
-        }
+        @extend .icon-style;
     }
 }
