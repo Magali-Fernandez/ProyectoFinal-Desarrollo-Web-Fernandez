@@ -11,6 +11,17 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    @if $card-type == "vip" {
+        background: linear-gradient(135deg, $color-secondary, $color-primary);
+        border: 3px double #0f0f0f;
+    } @else if $card-type == "standard" {
+        background-color: $color-primary;
+        border: 1px dashed #b43d3d;
+    } @else {
+        background-color: $color-primary;
+        color: #0f0f0f;
+        border: none;
+    }
 
     h2 {
         background: linear-gradient(135deg, #141313, #ffd700);

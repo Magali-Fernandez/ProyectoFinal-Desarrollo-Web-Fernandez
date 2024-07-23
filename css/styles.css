@@ -162,6 +162,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
+  background-color: #f5f5f5;
+  color: #0f0f0f;
+  border: none;
 }
 .card-body h2 {
   background: linear-gradient(135deg, #141313, #ffd700);

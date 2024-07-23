@@ -5,14 +5,14 @@
     text-align: center;
 }
 
-// Mixin flex column
+// Mixin flex en columna
 @mixin flex-column-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-// Mixin para el fondo del header
+// Mixin para el fondo del navbar
 @mixin background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../assets/images/oscuro1.webp");
