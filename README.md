@@ -21,3 +21,4 @@ Características
 
 Contacto: Magaí Fernández - magali.f03@gmail.com
 Github pages: [https://magali-fernandez.github.io/ProyectoFinal-Fernandez/](https://magali-fernandez.github.io/ProyectoFinal-Fernandez/)
+Link sitio web: http://gameofthronesarg.rf.gd/
